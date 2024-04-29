@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Wap Assignments and Activities</h1>
-    <hr>
-    <h3>HTML</h3>
-    <ul>
-        <li><a href="./week1/html/lab-1-html/">Lab 1 HTML</a></li>
+    <style>
+      body {
+        margin: 0;
+      }
+      header {
+        background: #ececec;
+        padding: 3px 5px;
+        margin: 30px 0;
+
+        &>span{
+            font-size: x-large;
+            font-weight: bolder;
+        }
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <span>WAP Activities</span>
+    </header>
+
+    <main>
+      <!-- profile image -->
+      <img width="200" src="./assets/me.jpeg" alt="" />
+
+      <!-- name -->
+      <h3>Alfred Benefo Boahene</h3>
+
+      <!-- a list -->
+      <ul>
+        <li><a href="/">Lab 1 HTML (This page)</a></li>
         <li><a href="#">Lab 2 HTML</a></li>
         <li><a href="#">Lab 3 HTML</a></li>
-    </ul>
-</body>
+        <li><a href="#">Lab 4 HTML</a></li>
+        <li><a href="#">Lab 5 HTML</a></li>
+        <li><a href="#">Lab 6 HTML</a></li>
+        <li><a href="#">Lab 7 HTML</a></li>
+      </ul>
+
+      <a
+        href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fabboahene.github.io%2FWAP%2F"
+      >
+        <img width="100" src="./assets/htmlchecker.png" alt="validate html" />
+      </a>
+    </main>
+  </body>
 </html>
