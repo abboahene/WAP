@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 70px;
+}
+
+.container{
+    width: 50vw;
+    background-color: white;
+}
+
+.about{
+    background-color: antiquewhite;
+}
+.classes{
+    background-color:#F4F6F6;
+}
+.movies{
+    background-color: #A9DFBF;
+}
+
+.moods{
+    background-color: #F9E79F;
+}
+
+.moods-container{
+    display: flex;
+    gap: 10px;
+}
+
+.moods-container img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.happy-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sad-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.happy-sad-hover:hover{
+    border-radius: 70px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.fun-fact{
+    background-color: #F5B7B1 ;
+}
+
+.formatted-text{
+    font-style: italic;
+    font-weight: 600;
+}
+
+.validators{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
