@@ -7,8 +7,18 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 
+p::first-letter{
+    font-size: 150%;
+}
 section {
     padding: 70px;
 }
@@ -26,6 +36,21 @@ section {
 }
 .movies{
     background-color: #A9DFBF;
+}
+
+.movie-list{
+    counter-reset: num 5;
+    list-style-type: none;
+}
+  
+.movie-list > li:before {
+    counter-increment: num -1;
+    content: counters(num, ".") ". ";
+}
+
+.genre{
+    color:brown;
+    font-weight: bold;
 }
 
 .moods{
