@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/miu-logo.png" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+       <div class="logo-container">
+        <img class="logo-img" src="../../../assets//miu-logo.png" alt="logo">
+       </div>
+       <div class="welcome">
+            Welcome, Alfred
+       </div>
+       <div class="logout-container">
+        <button class="logout-btn">
+            Logout
+        </button>
+       </div>
+    </header>
+    <main>
+        <section>
+            <h3>Product List</h3>
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Actions</th>
+                </thead>
+                <tr>
+                    <td>React.js</td>
+                    <td>9.99</td>
+                    <td>8</td>
+                    <td><button class="add-to-cart"></button></td>
+                </tr>
+                <tr>
+                    <td>Node.js</td>
+                    <td>19.99</td>
+                    <td>5</td>
+                    <td><button class="add-to-cart"></button></td>
+                </tr>
+                <tr>
+                    <td>Node.js</td>
+                    <td>29.99</td>
+                    <td>13</td>
+                    <td><button class="add-to-cart"></button></td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3>Your shopping cart</h3>
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Quantity</th>
+                </thead>
+                <tr>
+                    <td>React.js</td>
+                    <td>9.99</td>
+                    <td>9.99</td>
+                    <td><button class="add-to-cart"></button></td>
+                </tr>
+                <tr>
+                    <td>Node.js</td>
+                    <td>290.99</td>
+                    <td>10</td>
+                    <td>
+                        <div class="quantity-containter">
+                            <button>-</button>
+                            <input class="quantity" type="number" name="quantity" id="quantity">
+                            <button>+</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="total" colspan="4">
+                        <span class="total-text">Total:</span> 300.98
+                    </td>
+                </tr>
+            </table>
+            <div class="place-order-container">
+                <button class="place-order-btn">Place order</button>
+            </div>
+        </section>
+
+        <section class="validators">
+            <h3>Validate</h3>
+            <a
+                href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fabboahene.github.io%2FWAP%2Fweek1%2Fhtml%2Flab-2-html%2F"
+            >
+                <img width="100" src="../../../assets/htmlchecker.png" alt="validate html">
+            </a>
+            <a
+                href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fabboahene.github.io%2FWAP%2Fweek1%2Fhtml%2Flab-2-html%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"
+            >
+                <img width="100" src="../../../assets/css_checker.png" alt="validate html">
+            </a>
+        </section>
+
+    </main>
+</body>
+</html>
