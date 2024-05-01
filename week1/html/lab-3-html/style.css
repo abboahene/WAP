@@ -22,6 +22,7 @@ header{
 }
 .logo-img{
     border-radius: 50%;
+    border: 1px solid var(--secondary);
     width: 50px;
 }
 
@@ -45,16 +46,37 @@ table{
     width: 100%;
     text-align: center;
     border: 1px solid var(--tertiary);
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 6px;
 }
 
 thead{
     background-color: var(--secondary);
 }
 
+thead th:first-child{
+    border-top-left-radius: 6px;
+}
+thead th:last-child{
+    border-top-right-radius: 6px;
+}
+
 td, th{
     padding: 10px;
     border-bottom: 1px solid var(--tertiary);
+}
+
+table tr:last-child td{
+    border-bottom: none;
+}
+
+table tr:last-child td:first-child{
+    border-bottom-left-radius: 6px;
+}
+
+table tr:last-child td:last-child{
+    border-bottom-right-radius: 6px;
 }
 
 td.total{
