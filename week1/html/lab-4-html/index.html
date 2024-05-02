@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/miu-logo.png" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="title">Workshop Registration</div>
+            <div class="more-action">
+                <select name="action" id="action">
+                    <option value="">More actions</option>
+                    <option>View details</option>
+                    <option>Contact support</option>
+                    <option>Settings</option>
+                </select>
+            </div>
+        </header>
+        <main>
+            <div class="prompt">Register now while seats are available!</div>
+            <form class="form-container" action="#">
+                <div class="form-content">
+                <div class="form-left">
+                    <div class="form-input">
+                        <label for="fname">First Name <span class="require-star">*</span></label>
+                        <div class="form-input-element">
+                            <input type="text" name="fname" id="fname">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="lname">Last Name <span class="require-star">*</span></label>
+                        <div class="form-input-element">
+                        <input type="text" name="lname" id="lname">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="company">Company/Institution <span class="require-star">*</span></label>
+                        <div class="form-input-element">
+                            <input type="text" name="company" id="company">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="address">Address <span class="require-star">*</span></label>
+                        <div class="form-input-element">
+                            <textarea name="address" id="address">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="city">City <span class="require-star">*</span></label>
+                        <div class="form-input-element">
+                            <input type="text" name="city" id="city">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="state">State/Province/Region <span class="require-star">*</span></label>
+                        <div class="form-input-element">
+                            <select name="state" id="state">
+                                <option value=""></option>
+                                <option>IA</option>
+                                <option>DV</option>
+                                <option>TX</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="country">Country <span class="require-star">*</span></label>
+                        <div class="form-input-element">
+                            <select name="country" id="country">
+                                <option value=""></option>
+                                <option>Ghana</option>
+                                <option>US</option>
+                                <option>UK</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email <span class="require-star">*</span></label>
+                        <div class="form-input-element">
+                            <input type="text" name="email" id="email">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="phone">Phone Number <span class="require-star">*</span></label>
+                        <div class="form-input-element">
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-right">
+                    <div class="form-group">
+                        <div class="form-group-header">Lunch</div>
+                        <div class="form-group-inputs">
+                            <div class="form-input">
+                                <label for="meal">Meal Preference <span class="require-star">*</span></label>
+                                <div class="form-input-element">
+                                    <select name="meal" id="meal">
+                                        <option value=""></option>
+                                        <option>Chinese</option>
+                                        <option>American</option>
+                                        <option>African</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group-header">Payment Details</div>
+                        <div class="form-group-inputs">
+                            <div class="form-input">
+                                <label>Payment Mode <span class="require-star">*</span></label>
+                                <div class="form-input-group form-input-element">
+                                    <div class="form-input-checkbox">
+                                        <input type="checkbox" name="paymentMode">
+                                        <label>Cash</label>
+                                    </div>
+                                    <div class="form-input-checkbox">
+                                        <input type="checkbox" name="paymentMode">
+                                        <label>Cheque</label>
+                                    </div>
+                                    <div class="form-input-checkbox">
+                                        <input type="checkbox" name="paymentMode">
+                                        <label>Demand Draft</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-input">
+                                <label for="phone">DD/Check No. <span class="require-star">*</span></label>
+                                <div class="form-input-element">
+                                    <input type="text" name="phone" id="phone">
+                                </div>
+                            </div>
+                            <div class="form-input">
+                                <label for="phone">Drawn On (Bank Name) <span class="require-star">*</span></label>
+                                <div class="form-input-element">
+                                    <input type="text" name="phone" id="phone">
+                                </div>
+                            </div>
+                            <div class="form-input">
+                                <label for="phone">Payable at <span class="require-star">*</span></label>
+                                <div class="form-input-element">
+                                    <input type="text" name="phone" id="phone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="form-footer">
+                    <button onclick="javascript:void(0)">Submit</button>
+                    <button onclick="javascript:void(0)">Reset</button>
+                </div>
+            </form>
+        </main>
+    </div>   
+    <section class="validators">
+        <h3>Validate</h3>
+        <a
+            href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fabboahene.github.io%2FWAP%2Fweek1%2Fhtml%2Flab-3-html%2F"
+        >
+            <img width="100" src="./assets/htmlchecker.png" alt="validate html">
+        </a>
+        <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fabboahene.github.io%2FWAP%2Fweek1%2Fhtml%2Flab-3-html%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"
+        >
+            <img width="100" src="./assets/css_checker.png" alt="validate html">
+        </a>
+    </section>
+</body>
+</html>
