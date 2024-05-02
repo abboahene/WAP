@@ -54,6 +54,10 @@ header{
     margin: 20px 0;
 }
 
+.require-star{
+    color: rgb(222, 71, 71);
+}
+
 .form-input input{
     width: 96%;
 }
