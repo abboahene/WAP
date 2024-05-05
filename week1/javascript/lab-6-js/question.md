@@ -1,47 +1,58 @@
 
 ### Assignment Questions
 
-1. Create a function using function declaration named sum with one parameter of Array type, the
-returned result is the sum of all elements which are greater than 20.
-
-2. Create a function using function expression named getNewArray with one parameter of String
-Array, return a new array which contains all string, length is greater than and equal to 5, and
-contains letter ‘a’.
-
-3. Implement an arrow function with feature below:
-
-concat('hi', [1,2,3], ['Hello','world']) -> return result: ['h', 'i', 1,2,3, 'Hello','world']
-
-4.  For the given students array below, compute the average grade of all students who took cs303 course which returns an object which key is students' names, values is the average.
-
-Example of result:
+Exercise 1: What’s the output in the console? And Draw the execution context as we did in the class. Take a photo or screenshot of what you draw, then upload on github. 
 
 ```
-{
+function b() {
 
- Quincy: 93.5,
+    const  y  =  30; a();
 
- Sam: 86.5,
+    function a() { 
+      console.log(x,  y);
+    }
 
- Katie: 71.5
+    var  x  =  10; console.log(x, y);
 
 }
+
+const  x  =  20; var  y  =  40; b();
+```
+ 
+
+
+
+Exercise 2: What’s the output in the console? And Draw the execution context as we did in the class. Take a photo or screenshot of what you draw, then upload on github. 
+
+````
+function  foo(x)  {
+
+  let m;
+
+  console.log(x, y);
+
+  if(x > 5){
+
+  var  y  =  5; m = x + y;
+
+  } else {
+
+  let  z  =  10; m = z;
+
+  }
+
+  x = m;
+
+  console.log(x, y);
+
+}
+
+
+var  x  =  10;
+
+foo(3);
+
+console.log(x);
 ```
 
-> You're not allowed to use for, while, do...while, for..of, forEach loop
-
-```
-const students = [
-
-  { name: 'Quincy', grades: [99, 88], courses:['cs301', 'cs303']},
-
-  { name: 'Jason', grades: [29, 38], courses:['cs201', 'cs203']},
-
-  { name: 'Alexis', grades: [79, 78], courses:['cs105', 'cs211'] },
-
-  { name: 'Sam', grades: [91, 82], courses:['cs445', 'cs303'] },
-
-  { name: 'Katie', grades: [66, 77], courses:['cs303', 'cs477'] }
-
-];
-```
+Exercise 3: Write a function printNumbers(from, to) that outputs a number every second, starting from from and ending with to.
