@@ -27,7 +27,7 @@ function LinkedList(){
         }
         curr.next = new Node(data);
     };
-    this.remove = function (data){
+    this.remove = (data) => {
         if(!this.head){
             console.log("Can not remove from empty list");
             return;
