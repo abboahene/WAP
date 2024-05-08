@@ -58,6 +58,9 @@ const students = [
 
 ];
 
+// you can just filter the students by their course before calculating the average
+// students.filter()
+
 const computeStudentAvg = (students = []) => {
     const reduceStudentsFunc = (studentsAcc, {name, grades, courses}) => {
         if(courses.includes('cs303')){
