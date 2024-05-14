@@ -1,0 +1,1 @@
+Output: { firstname: 'John', lastname: 'Smith' }
