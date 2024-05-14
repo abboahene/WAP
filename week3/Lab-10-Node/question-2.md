@@ -1,0 +1,10 @@
+start
+end
+nextTick 1
+nextTick 2
+Promise...1
+Promise...2
+timeout 1
+timeout 2
+nextTick 3
+timeout 3
