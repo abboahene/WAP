@@ -1,0 +1,29 @@
+GET http://localhost:3000/books
+
+###
+GET http://localhost:3000/books/uacfSn9ocXUpDW3ZPixiZT
+
+###
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "Book4",
+    "ISBN": 444,
+    "publishedDate": "01-01-2001",
+    "author": "Yohannes"
+}
+
+###
+DELETE http://localhost:3000/books/uacfSn9ocXUpDW3ZPixiZT
+
+###
+PUT http://localhost:3000/books/kHiMCRaBL3N6H4HKbTbkj3
+Content-Type: application/json
+
+{
+    "title": "Book2 updated",
+    "ISBN": 223,
+    "publishedDate": "01-01-2001",
+    "author": "Toan updated"
+}
